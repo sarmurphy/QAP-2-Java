@@ -30,6 +30,21 @@ public class MyRectangle {
         this.bottomRight = bottomRight;
     }
 
+    // Method for height of rectangle
+    public int getHeight() {
+        return Math.abs(bottomRight.getY() - topLeft.getY());
+    }
+
+    // Method for width of rectangle
+    public int getWidth() {
+        return Math.abs(bottomRight.getX() - topLeft.getX());
+    }
+
+    // Method for area of rectangle
+    public int getArea() {
+        return getHeight() * getWidth();
+    }
+
     // Method to return a string of the rectangle
     public String toString() {
         return "MyRectangle[topLeft = " + topLeft + ", bottomRight = " + bottomRight +  "]";
